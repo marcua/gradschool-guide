@@ -26,7 +26,7 @@ body {
      -moz-border-radius: 6px 6px 0 0;
           border-radius: 6px 6px 0 0;
 }
-.headers-sidenav > li:last-child > a {
+.headers-sidenav > li.last-child > a {
   -webkit-border-radius: 0 0 6px 6px;
      -moz-border-radius: 0 0 6px 6px;
           border-radius: 0 0 6px 6px;
@@ -66,4 +66,10 @@ body {
   position: absolute;
   top: auto;
   bottom: 270px;
+}
+
+h1.padtop {
+  padding-top: 35px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }

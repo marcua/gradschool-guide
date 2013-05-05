@@ -26,7 +26,8 @@
       ================================================== -->
       <div class="span3 headers-sidebar">
         <ul class="nav nav-list headers-sidenav" data-spy="affix" data-offset-top="300">
-          <li><a href="#introduction"><i class="icon-chevron-right"></i> Introduction</a></li>
+          <div class="hide-navigation-container"><a class="hide-navigation" href="#">[hide navigation]</a></div>        
+          <li class="first-child" ><a href="#introduction"><i class="icon-chevron-right"></i> Introduction</a></li>
           <li><a href="#caveats"><i class="icon-chevron-right"></i> Caveats</a></li>
           <li><a href="#approaching-things"><i class="icon-chevron-right"></i> Approaching things</a></li>
           <li><a href="#creating-things"><i class="icon-chevron-right"></i> Creating things</a></li>
@@ -395,8 +396,6 @@
     </div>
 
   </div>
-    
-    
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script>
@@ -407,6 +406,15 @@
 
 	  ga('create', 'UA-2529786-2', 'marcua.net');
 	  ga('send', 'pageview');
+	</script>
+	<script>
+	  $(document).ready(function() {
+		$('.hide-navigation').click(function(event) {
+		  $('.headers-sidenav').toggle();
+		  event.stopPropagation();
+		  return false;
+		});	
+	  });
 	</script>
   </body>
 </html>

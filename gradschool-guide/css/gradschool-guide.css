@@ -21,7 +21,7 @@ body {
   padding: 8px 14px;
   border: 1px solid #e5e5e5;
 }
-.headers-sidenav > li:first-child > a {
+.headers-sidenav > li.first-child > a {
   -webkit-border-radius: 6px 6px 0 0;
      -moz-border-radius: 6px 6px 0 0;
           border-radius: 6px 6px 0 0;
@@ -72,4 +72,8 @@ h1.padtop {
   padding-top: 35px;
   padding-bottom: 0px;
   margin-bottom: 0px;
+}
+
+.hide-navigation-container {
+  text-align: right;
 }
